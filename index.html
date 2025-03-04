@@ -6,16 +6,44 @@
     <title>Akhila Santhosh - Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        h1, h2 {
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: #fff;
+            border-radius: 8px 8px 0 0;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 10px 0;
+            font-size: 2em;
+        }
+        h2 {
             color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 20px;
         }
         a {
             color: #3498db;
@@ -23,90 +51,93 @@
         }
         a:hover {
             text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 30px;
+            color: #e74c3c;
         }
         .contact {
             font-size: 0.9em;
-            color: #7f8c8d;
+            color: #ecf0f1;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .skills ul, .projects p {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Akhila Santhosh</h1>
-        <p>Software Engineer | Master’s Student in Artificial Intelligence</p>
-        <p class="contact">
-            Cottbus, Germany | +49 160 9624 2791 | akhilasanthosh33@gmail.com<br>
-            <a href="http://www.linkedin.com/in/akhila-santhosh-9a20a5192/">LinkedIn</a> | 
-            <a href="https://github.com/AkhilaSanthosh1">GitHub</a>
-        </p>
-    </header>
+    <div class="container">
+        <header>
+            <img src="profile.jpg" alt="Akhila Santhosh">
+            <h1>Akhila Santhosh</h1>
+            <p>Software Engineer | Master’s Student in Artificial Intelligence</p>
+            <p class="contact">
+                Cottbus, Germany | +49 160 9624 2791 | akhilasanthosh33@gmail.com<br>
+                <a href="http://www.linkedin.com/in/akhila-santhosh-9a20a5192/">LinkedIn</a> | 
+                <a href="https://github.com/AkhilaSanthosh1">GitHub</a>
+            </p>
+        </header>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>I’m a passionate software engineer and Artificial Intelligence master’s student at Brandenburg University of Technology. With a strong foundation in software development, cloud technologies, and AI, I thrive on solving complex problems and delivering innovative, scalable solutions.</p>
-    </div>
-
-    <div class="section">
-        <h2>Education</h2>
-        <p><strong>Master’s in Artificial Intelligence</strong><br>
-        Brandenburg University of Technology, Germany<br>
-        Oct 2022 – Present</p>
-        <p><strong>Bachelor’s in Computer Science and Engineering</strong><br>
-        Mangalam College of Engineering, India<br>
-        June 2016 – July 2020</p>
-    </div>
-
-    <div class="section">
-        <h2>Professional Experience</h2>
-        <p><strong>Software Engineer</strong><br>
-        EY GDS, Kochi, India<br>
-        April 2021 – Oct 2022</p>
-        <ul>
-            <li>Built and maintained web APIs using ASP.NET Core, C#, and MySQL, enabling efficient CRUD operations and data management.</li>
-            <li>Designed database tables and stored procedures to support API functionality.</li>
-            <li>Deployed applications on AWS (EC2, Load Balancer, S3) and utilized AWS Transfer Family for secure data transfers.</li>
-            <li>Developed front-end components with Angular, CSS, and HTML, and backend services with Python and Java.</li>
-            <li>Collaborated with teams to optimize performance and integrate cloud solutions on AWS and Azure.</li>
-            <li>Managed source code with Git and performed advanced SQL queries for relational databases.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> C#, Python, Java, SQL, HTML, CSS</li>
-            <li><strong>Frameworks/Tools:</strong> ASP.NET Core, Angular, Git</li>
-            <li><strong>Databases:</strong> MySQL</li>
-            <li><strong>Cloud:</strong> AWS (EC2, S3, Load Balancer), Azure</li>
-            <li><strong>Concepts:</strong> AI, Microservices, Web Development, CRUD Operations</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Certifications</h2>
-        <p><strong>Microsoft Azure Administrator Associate</strong><br>
-        Microsoft | 2021 | Credential ID: H920-8511</p>
-    </div>
-
-    <div class="section">
-        <h2>Projects</h2>
         <div class="section">
-            <p><strong>Data Analysis Tool</strong><br>
-            Created a Python script to analyze CSV data and generate summary statistics.<br>
-            <strong>Technologies:</strong> Python, Pandas<br>
-            <a href="https://github.com/AkhilaSanthosh1/data-analysis-tool">GitHub Link</a></p>
+            <h2>About Me</h2>
+            <p>I’m a passionate software engineer and Artificial Intelligence master’s student at Brandenburg University of Technology. With a strong foundation in software development, cloud technologies, and AI, I thrive on solving complex problems and delivering innovative, scalable solutions.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Master’s in Artificial Intelligence</strong><br>
+            Brandenburg University of Technology, Germany<br>
+            Oct 2022 – Present</p>
+            <p><strong>Bachelor’s in Computer Science and Engineering</strong><br>
+            Mangalam College of Engineering, India<br>
+            June 2016 – July 2020</p>
+        </div>
+
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <p><strong>Software Engineer</strong><br>
+            EY GDS, Kochi, India<br>
+            April 2021 – Oct 2022</p>
+            <ul>
+                <li>Built and maintained web APIs using ASP.NET Core, C#, and MySQL, enabling efficient CRUD operations and data management.</li>
+                <li>Designed database tables and stored procedures to support API functionality.</li>
+                <li>Deployed applications on AWS (EC2, Load Balancer, S3) and utilized AWS Transfer Family for secure data transfers.</li>
+                <li>Developed front-end components with Angular, CSS, and HTML, and backend services with Python and Java.</li>
+                <li>Collaborated with teams to optimize performance and integrate cloud solutions on AWS and Azure.</li>
+                <li>Managed source code with Git and performed advanced SQL queries for relational databases.</li>
+            </ul>
+        </div>
+
+        <div class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> C#, Python, Java, SQL, HTML, CSS</li>
+                <li><strong>Frameworks/Tools:</strong> ASP.NET Core, Angular, Git</li>
+                <li><strong>Databases:</strong> MySQL</li>
+                <li><strong>Cloud:</strong> AWS (EC2, S3, Load Balancer), Azure</li>
+                <li><strong>Concepts:</strong> AI, Microservices, Web Development, CRUD Operations</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <p><strong>Microsoft Azure Administrator Associate</strong><br>
+            Microsoft | 2021 | Credential ID: H920-8511</p>
+        </div>
+
+        <div class="section projects">
+            <h2>Projects</h2>
             <p><strong>Master Entity Web API</strong><br>
             Developed a web API at EY GDS to manage master data with CRUD operations.<br>
             <strong>Technologies:</strong> C#, ASP.NET Core, MySQL</p>
+            <p><strong>AWS-Deployed Web Application</strong><br>
+            Deployed a web app on AWS EC2 with a Load Balancer and S3 storage at EY GDS.<br>
+            <strong>Technologies:</strong> AWS, ASP.NET Core, Angular</p>
         </div>
-        <p><strong>Web API for User Management</strong><br>
-        Developed a web API for managing user data using ASP.NET Core and MySQL.<br>
-        <strong>Technologies:</strong> C#, ASP.NET Core, MySQL<br>
-        <a href="https://github.com/AkhilaSanthosh1/project-name">GitHub Link</a></p>
     </div>
-
 </body>
 </html>
